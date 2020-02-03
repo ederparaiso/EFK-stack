@@ -8,5 +8,4 @@ RUN sudo gem install \
     && apk del .build-deps \
     && rm -rf /var/cache/apk/* \
     /home/fluent/.gem/ruby/2.3.0/cache/*.gem
-RUN mkdir -p /logs/myapp
-# USER fluent
+USER fluent
